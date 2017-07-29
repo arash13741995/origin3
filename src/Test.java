@@ -9,7 +9,7 @@ class Test
     {
         int a = 5;
         int b = 6;
-        int expected = 30;
+        int expected = -1;
         BasicMath bm = new BasicMath();
         int result = bm.mult(a, b);
         if (result == expected)
@@ -19,6 +19,16 @@ class Test
         else
         {
             System.out.println("Mult: Failed, expected = " + expected + ", result = " + result);
+        int expected = -1;
+        BasicMath bm = new BasicMath();
+        int result = bm.sub(a, b);
+        if (result == expected)
+        {
+            System.out.println("Sub: OK");
+        }
+        else
+        {
+            System.out.println("Sub: Failed, expected = " + expected + ", result = " + result);
         }
     }
 }
